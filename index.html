@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
+    <!DOCTYPE html>
+    <html lang="en">
     <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SalxIeva // Web Developer</title>
@@ -17,7 +15,7 @@
         <!-- Bootstrap Navbar -->
 
         <nav class="navbar navbar-expand-lg header" id="mainNav">
-            <div class="container-fluid container">
+            <div class="container-fluid container sm-4 md-8 lg-12">
               <a class="navbar-brand" href="#">Ieva Saldukaite</a>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
@@ -36,7 +34,7 @@
 <div class="p-5 mb-4 me">
     <div class="container-fluid py-5 custom-Jumbo">
         <h1 class="display-5 fw-bold developer">Developer based in London</h1>
-        <p class="col-md-8 fs-4 description">Details, creativity and passion brings all the right people together.</p>
+        <p class="col-sm-4 col-lg-8 fs-4 description">Details, creativity and passion brings all the right people together.</p>
     </div>
 </div>
 
@@ -44,42 +42,47 @@
     <!--work section displaying my work -->
     <!--bootstrap cards-->
 
-    <!-- card 1 -->
-    <div class="card text-bg-dark">
 
-        <img src="./images/Portfolio.png" class="card-img" alt="portfolio project" width="300">
-        <div class="card-img-overlay">
-          <h5 class="card-title">My Portfolio project</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-
+  <div class="container text-center">
+    <h2 class="display-5 fw-bold">Projects</h2>
+      <div class="row align-items-end">
+        <div class="col">
+          <!-- card 1 -->
+          <div class="card">
+            <img src="../Bootstrap-SalxIeva-Portfolio/images/Portfolio.png" class="card-img-top" alt="portfolio project screenshot">
+            <div class="card-body">
+              <a href="https://salxieva.github.io/SalxIeva-Portfolio/" class="stretched-link fw-bold" id="portfolio">My Portfolio</a>
+              <p class="card-text">description</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <!-- card 2 -->
+          <div class="card">
+            <img src="../Bootstrap-SalxIeva-Portfolio/images/Horiseon.png" class="card-img-top" alt="Horiseon project screenshot">
+            <div class="card-body">
+              <a href="https://salxieva.github.io/horiseon-accesible-resources/" class="stretched-link fw-bold" id="horiseon">Horiseon Resources</a>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <!-- card 3 -->
+          <div class="card">
+            <img src="../Bootstrap-SalxIeva-Portfolio/images/Prework.png" class="card-img-top" alt="prework project screenshot">
+            <div class="card-body">
+              <a href="https://salxieva.github.io/horiseon-accesible-resources/" class="stretched-link fw-bold" id="prework">PreWork</a>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- card 2 -->
-    <div class="card text-bg-dark">
-
-        <img src="./images/Horiseon.png" class="card-img" alt="people in the office">
-        <div class="card-img-overlay">
-          <h5 class="card-title">Horiseon Accesible Resources</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-
-
-        </div>
-      </div>
-
-      <!-- card 3 -->
-    <div class="card text-bg-dark">
-
-        <img src="./images/Prework.png" class="card-img" alt="screenshot of prewrok project">
-        <div class="card-img-overlay">
-          <h5 class="card-title">PreWork project</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-
-        </div>
-      </div>
+    </div>
+   
 
       <!-- skills section, skills expected to learn from the bootcamp-->
-
+      <div class="container text-center">
+        <h2 class="display-5 fw-bold">Skills I am expecting to learn</h2>
       <ul class="list-group">
         <li class="list-group-item">An item</li>
         <li class="list-group-item">A second item</li>
@@ -87,13 +90,22 @@
         <li class="list-group-item">A fourth item</li>
         <li class="list-group-item">And a fifth one</li>
       </ul>
+    </div>
 
        <!-- about me section / contact me -->
       <section>
+        <div class="container">
+          <h2 class="display-5 fw-bold text-center">About Me</h2>
         <div class="row">
-            <div class="col-sm-8">col-sm-8</div>
+            <div class="col-sm-12">
+              <p>Hello! My name is Ieva Saldukaite and I am Front-End Developer!</p>
+        <p>I have tried many carrers so far, including classical singing, arts, business perpectives.. At the moment I work as Head of Coffee/Manager, full time dog mom and study Front-End Development! This time I am hoping to make my last change in regards to career.</p>
+        <p>I am very good at quick problem solving and looking into all the details when it comes to work. There is no better feeling when you can truly be proud of the work you have done!</p>
+        <p>At the moment I can work with HTML, CSS and basic Javascript but little projects and constant new resources are building my knowledge bigger and bigger every day!</p>
+            </div>
             <div class="col-sm-4">col-sm-4</div>
           </div>
+        </div>
       </section>
 
        <!-- footer section: hyperlinks, buttons-->
