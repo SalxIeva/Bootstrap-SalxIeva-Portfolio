@@ -17,6 +17,9 @@ html {
     --box-shadow: 15px 10px 12px #520120;
     --border-radius: 25px;
     --noBorder: 0;
+    --size1: 20px;
+    --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 body {
     background-color: #330000;
@@ -83,3 +86,9 @@ div h2 {
 .container .row .col .card {
     align-items: auto;
 }
+
+.description, .card-text, .list, .info, .details {
+    font-size: var(--size1);
+    font-family: var(--font-family);
+}
+
