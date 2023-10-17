@@ -6,6 +6,7 @@
     border-width: 1px;
 } */
 
+/* to benefit smooth scroll through the page */
 html {
     scroll-behavior: smooth;
 } 
@@ -30,24 +31,42 @@ body {
 .container {
     font-size: 30px;
     background-size: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
+/* to benefit elements*/
+.container .row .col-sm-4 .card a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+.description, .card-text, .list, .info, .details {
+    font-size: var(--size1);
+    font-family: var(--font-family);
+}
+/* navbar */
 .navbar-nav {
-      margin-left: auto;
-      margin-right: 0 !important;
-      font-size: 20px;
+    margin-left: auto;
+    margin-right: 0 !important;
+    font-size: 20px;
 }
 #mainNav .navbar-brand {
     font-size: 30px;
     color: var(--color);
     font-weight: 400;
 }
-/* jumbotron */
+/* hover effect added to navbar link section*/
+.navbar-nav a:hover {
+    color: var(--color);
+    text-decoration: underline;
+}
+
+
+    /* jumbotron */
 .me {
     background-image: url("../images/me.2.jpg");
     background-size: cover;
@@ -62,33 +81,36 @@ body {
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-.developer, .description {
+/* to benefit all child elements */
+.developer, .description, div h2 {
     color: var(--color);
 }
-div h2 {
-    color: var(--color);
-}
-.container ul li, .container ul, .box, .container .row .col .card {
-    border: var(--noBorder);
-}
-.footer a {
-    border: var(--noBorder);
-  /*  border-top: 2px solid black; */
+/* to add extra padding for h2 elements*/
+.project, .info, .about-me, .learn {
+    padding-bottom: 15px;
 }
 #about {
     padding: 0 30px;
 }
-.container .row .col .card a {
-    text-decoration: none;
-    color: black;
-    opacity: 0.8;
+/* to benefit all child elements */
+.container ul li, .container ul, .box, .container .row .col-sm-4 .card, .footer a {
+    border: var(--noBorder);
 }
-.container .row .col .card {
-    align-items: auto;
+/* to benefit mid column*/
+.web {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+.web::before, .web::after {
+    content: "🙌";
+    display: flex;
+    align-items: center;
+} 
+/* hover effect added to hyperlink buttons */
+.col-md-4 a:hover {
+  color: var(--color);
+  text-decoration: underline;
+  box-shadow: var(--box-shadow);
 }
-
-.description, .card-text, .list, .info, .details {
-    font-size: var(--size1);
-    font-family: var(--font-family);
-}
-
