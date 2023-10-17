@@ -1,9 +1,10 @@
+/*
 * {
     box-sizing: border-box;
     border-style: solid;
     border-color: red;
     border-width: 1px;
-}
+} */
 
 html {
     scroll-behavior: smooth;
@@ -12,7 +13,10 @@ html {
 :root {
     --padding: 20px;
     --margin: 10px;
-    --cherry: 
+    --color:antiquewhite;
+    --box-shadow: 15px 10px 12px #520120;
+    --border-radius: 25px;
+    --noBorder: 0;
 }
 body {
     background-color: #330000;
@@ -21,8 +25,14 @@ body {
     background-size: cover; 
 }
 .container {
-        font-size: 30px;
-        background-size: 0;
+    font-size: 30px;
+    background-size: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
 }
 .navbar-nav {
       margin-left: auto;
@@ -31,7 +41,7 @@ body {
 }
 #mainNav .navbar-brand {
     font-size: 30px;
-    color: white;
+    color: var(--color);
     font-weight: 400;
 }
 /* jumbotron */
@@ -40,6 +50,9 @@ body {
     background-size: cover;
     margin: 0 100px;
     height: calc(100vh - 25px);
+    box-shadow: var(--box-shadow);
+    border-radius: var();
+    border-radius: var(--border-radius);
 }
 .custom-Jumbo {
     display: flex;
@@ -47,19 +60,26 @@ body {
     flex-wrap: wrap;
 }
 .developer, .description {
-    color: white;
+    color: var(--color);
 }
-
-<div class="container text-center">
-  <div class="row">
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
-    </div>
-  </div>
-</div>
+div h2 {
+    color: var(--color);
+}
+.container ul li, .container ul, .box, .container .row .col .card {
+    border: var(--noBorder);
+}
+.footer a {
+    border: var(--noBorder);
+  /*  border-top: 2px solid black; */
+}
+#about {
+    padding: 0 30px;
+}
+.container .row .col .card a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+.container .row .col .card {
+    align-items: auto;
+}
