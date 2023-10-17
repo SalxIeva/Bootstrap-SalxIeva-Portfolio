@@ -12,7 +12,8 @@ html {
 :root {
     --padding: 20px;
     --margin: 10px;
-    --cherry: 
+    --size1: 20px;
+    --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
     background-color: #330000;
@@ -50,16 +51,8 @@ body {
     color: white;
 }
 
-<div class="container text-center">
-  <div class="row">
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
-    </div>
-  </div>
-</div>
+.description, .card-text, .list, .info, .details {
+    font-size: var(--size1);
+    font-family: var(--font-family);
+}
+
