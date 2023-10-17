@@ -19,9 +19,9 @@
               <a class="navbar-brand" href="#">Ieva Saldukaite</a>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link" href="#about">About Me</a>
                   <a class="nav-link" href="#projects">Projects</a>
                   <a class="nav-link" href="#skills">Skills</a>
+                  <a class="nav-link" href="#about">About Me</a>
                   <a class="nav-link" href="#contact">Contact Me</a>
                 </div>
               </div>
@@ -43,36 +43,36 @@
     <!--bootstrap cards-->
 
 
-  <div class="container text-center">
+  <div class="container text-center" id="projects">
     <h2 class="display-5 fw-bold">Projects</h2>
       <div class="row align-items-end">
         <div class="col">
           <!-- card 1 -->
-          <div class="card">
+          <div class="card bg-transparent">
             <img src="../Bootstrap-SalxIeva-Portfolio/images/Portfolio.png" class="card-img-top" alt="portfolio project screenshot">
             <div class="card-body">
               <a href="https://salxieva.github.io/SalxIeva-Portfolio/" class="stretched-link fw-bold" id="portfolio">My Portfolio</a>
-              <p class="card-text">description</p>
+              <p class="card-text">This project is my first portfolio. It showcases many different styles: navbar, flex, grid.. It also includes media query, to make it easier for tablets and mobile devices.</p>
             </div>
           </div>
         </div>
         <div class="col">
           <!-- card 2 -->
-          <div class="card">
+          <div class="card bg-transparent">
             <img src="../Bootstrap-SalxIeva-Portfolio/images/Horiseon.png" class="card-img-top" alt="Horiseon project screenshot">
             <div class="card-body">
               <a href="https://salxieva.github.io/horiseon-accesible-resources/" class="stretched-link fw-bold" id="horiseon">Horiseon Resources</a>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">This project is made to simplify CSS and make it easier to read for other developers without changing initial user story.</p>
             </div>
           </div>
         </div>
         <div class="col">
           <!-- card 3 -->
-          <div class="card">
+          <div class="card bg-transparent">
             <img src="../Bootstrap-SalxIeva-Portfolio/images/Prework.png" class="card-img-top" alt="prework project screenshot">
             <div class="card-body">
               <a href="https://salxieva.github.io/horiseon-accesible-resources/" class="stretched-link fw-bold" id="prework">PreWork</a>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">This project is a guide for beginning and fututre learning. It solves basic problems like: what HTML, CSS, JavaScript and Git are and what they are used for.</p>
             </div>
           </div>
         </div>
@@ -81,37 +81,62 @@
    
 
       <!-- skills section, skills expected to learn from the bootcamp-->
-      <div class="container text-center">
-        <h2 class="display-5 fw-bold">Skills I am expecting to learn</h2>
-      <ul class="list-group">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
+      <div class="container" id="skills">
+        <h2 class="display-5 fw-bold text-center">Skills I am expecting to learn</h2>
+      <ul class="list-group list">
+        <li class="list-group-item bg-transparent">How to build accessible, responsive websites whilst using different programming languages.</li>
+        <li class="list-group-item bg-transparent">How to use web development frameworks.</li>
+        <li class="list-group-item bg-transparent">Project managing.</li>
+        <li class="list-group-item bg-transparent">Foundation and logical thinking for communicating with programing languages.</li>
+        <li class="list-group-item bg-transparent">Testing and debugging.</li>
       </ul>
     </div>
 
        <!-- about me section / contact me -->
-      <section>
-        <div class="container">
+      <section class="about-me">
+        <div class="container" id="about">
           <h2 class="display-5 fw-bold text-center">About Me</h2>
-        <div class="row">
+        <div class="row info">
             <div class="col-sm-12">
               <p>Hello! My name is Ieva Saldukaite and I am Front-End Developer!</p>
         <p>I have tried many carrers so far, including classical singing, arts, business perpectives.. At the moment I work as Head of Coffee/Manager, full time dog mom and study Front-End Development! This time I am hoping to make my last change in regards to career.</p>
         <p>I am very good at quick problem solving and looking into all the details when it comes to work. There is no better feeling when you can truly be proud of the work you have done!</p>
         <p>At the moment I can work with HTML, CSS and basic Javascript but little projects and constant new resources are building my knowledge bigger and bigger every day!</p>
             </div>
-            <div class="col-sm-4">col-sm-4</div>
           </div>
         </div>
+
+        <div class="container" id="contact">
+          <h2 class="display-5 fw-bold text-center">Contact Me</h2>
+          <ul class="list-group list-group-item bg-transparent">
+            <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Email me:</div>
+                ieva.saldukaite@gmail.com
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Call me: </div>
+                +447746713135
+              </div>
+            </li>
+          </ul>
+          </div>
       </section>
 
        <!-- footer section: hyperlinks, buttons-->
-      <div class="footer">
-        <div class="row">
-            <div class="col">footer</div>
+       <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col">
+            <a href="mailto:ieva.saldukaite@gmail.com" class="btn btn-lg" role="button">ieva.saldukaite@gmail.com</a>
+          </div>
+          <div class="col">
+            Let's create some websites!
+          </div>
+          <div class="col">
+            <a href="https://github.com/SalxIeva" class="btn btn-lg" role="button">SalxIeva</a>
+          </div>
         </div>
       </div>
     <!-- bootstrap's JS-->
